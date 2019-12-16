@@ -3,18 +3,17 @@
     ViewBag.Title = "Cadastrar Cliente";
 }
 @section scripts{
-<script>
+    <script>
         var urlPost = '@Url.Action("Incluir", "Cliente", new { area = "" })';
         $(document).ready(function () {
             $("#Telefone").inputmask("mask", { "mask": "(99) 9999-99999" });
             $("#CPF").inputmask("mask", { "mask": "999.999.999-99" }, { reverse: true });
             $("#CEP").inputmask("mask", { "mask": "99999-999" });
         });
-</script>
     </script>
     @Scripts.Render("~/bundles/clientes")
+    @Scripts.Render("~/bundles/beneficiarios")
     @Scripts.Render("~/bundles/inputmask")
 }
 <h2>@Html.Raw(ViewBag.Title)</h2>
 @Html.Partial("Forms")
-
