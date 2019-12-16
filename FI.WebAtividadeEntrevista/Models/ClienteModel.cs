@@ -17,6 +17,7 @@ namespace WebAtividadeEntrevista.Models
         /// CEP
         /// </summary>
         [Required]
+        [DataType(DataType.PostalCode)]
         public string CEP { get; set; }
 
         /// <summary>
