@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebAtividadeEntrevista.Controllers
 {
-    public class BeneficiariosController : Controller
+    public class BeneficiarioController : Controller
     {
         // GET: Beneficiarios
         public ActionResult Index()
